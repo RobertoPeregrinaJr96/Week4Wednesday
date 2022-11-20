@@ -5,7 +5,12 @@ function allTheArgs(func, ...args) {
     return func(...args,...ele)
   }
 }
-
+// or
+// function allTheArgs(func, ...args) {
+//   //!!START
+//   return func.bind(null, ...args);
+//   //!!END
+// }
 
 
 

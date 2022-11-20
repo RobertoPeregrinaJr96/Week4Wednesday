@@ -28,7 +28,16 @@ const dog = {
     return "Woof, my name is " + this.name + " and I'm chasing " + animal.name;
   }
 };
-
+//or
+// function callOnTarget(func, obj1, obj2) {
+//   //!!START
+//   let boundFunc = func.bind(obj1);
+//   return boundFunc(obj2);
+//   // other options:
+//   // return func.call(obj1, obj2);
+//   // return func.apply(obj1, [obj2]);
+//   //!!END
+// }
 console.log(callOnTarget(dog.chase, cat, dog));
 // "Woof, my name is Breakfast and I'm chasing Noodles"
 /*****************************************************************************/

@@ -15,6 +15,25 @@ class Dog {
 		return `${this.name} says ${word}`
 	}
 }
+// or
+// class Dog {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+
+// 	static makeJet() {
+// 		return new this('Jet')
+// 	}
+
+// 	speak(word) {
+// 		return this.name + " says " + word;
+// 	}
+
+// 	changeName(newName) {
+// 		this.name = newName;
+// 		return this.name;
+// 	}
+// }
 let dog1 = Dog.makeJet(); // returns an object
 
 console.log(dog1.name);                 // Jet

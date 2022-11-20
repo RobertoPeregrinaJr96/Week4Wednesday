@@ -17,9 +17,24 @@ class PartyPlanner {
 
 
 }
+//or
+// class PartyPlanner {
+// 	constructor() {
+// 		this.guestList = [];
+// 	}
 
+// 	throwParty() {
+// 		if (this.guestList.length > 0) {
+// 			return "Welcome to the party " + this.guestList.join(" and ");
+// 		} else {
+// 			return "Gotta add people to the guest list";
+// 		}
+// 	}
 
-
+// 	addToGuestList(name) {
+// 		this.guestList.push(name);
+// 	}
+// }
 
 
 

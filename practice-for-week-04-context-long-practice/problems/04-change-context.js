@@ -12,6 +12,16 @@ class Person {
 function extractName() {
   return this.name;
 }
+or
+// function changeContext(func, obj) {
+//   //!!START
+//   let boundFunc = func.bind(obj);
+//   return boundFunc();
+//   // other options:
+//   // return func.apply(obj);
+//   // return func.apply(obj);
+//   //!!END
+// }
 
 const kristen = new Person('Kristen');
 console.log(changeContext(extractName, kristen)); // => Kristen

@@ -2,11 +2,8 @@ function boundFuncTimer(obj, func, delay) {
   // Your code here
   let fun = func.bind(obj)
   setTimeout(fun, delay)
-
+//  setTimeout(func.bind(obj), delay);
 }
-
-
-
 
 class Animal {
   constructor(age) {
